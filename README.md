@@ -1,11 +1,21 @@
 # CadastroDeContatosMVC
 Um sistema ASP.NET (5.0) utilizando do Entity framehowrk e Bootstrap para fazer um site com um CRUD de cadrastro de contatos com ligação a um banco de dados SQL Server.
 
-Para rodar, baixe o EntityFramework Core, Tools, Desing e SQL Server, todos na versão 5.0
-Popule o Appsettings.Json com o conection String do BD
-"ConnectionStrings": {
-    "Database": "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;"
-    },
+Para rodar, baixe:<br>
+<ul>
+  <li>EntityFramework Core</li>
+  <li>EntityFramework Tools </li>
+  <li>EntityFramework Desing </li>
+    <li>EntityFrameworkSQL Server </li>
+</ul><br>
+
+```Todos na versão 5.0 <br>```
+
+Popule o Appsettings.Json com o conection String do seu Banco de Dados SQL Server 
+<br>
+
+
+```"ConnectionStrings": {"Database": "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;"}```
 
 Rode o comando 
 ```Update-Database -Context BancoContext ```
