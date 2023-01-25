@@ -19,7 +19,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 5.0
+          dotnet-version: 5.0.x
           
       # Install dotnet wasm buildtools workload
       - name: Install .NET WASM Build Tools
@@ -33,5 +33,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist/Web/wwwroot
+          BRANCH: main
+          FOLDER: dist/Web/Views/Home
